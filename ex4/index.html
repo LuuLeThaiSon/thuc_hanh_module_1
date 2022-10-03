@@ -19,11 +19,12 @@
           height;
           color;
 
-          constructor() {
+          constructor(x,y,width,height,color) {
                this.x = x;
                this.y = y;
                this.width = width;
                this.height = height;
+               this.color = color;
           }
 
           getX() {
@@ -36,7 +37,10 @@
                return this.width;
           }
           getHeight() {
-               return this.height
+               return this.height;
+          }
+          getColor() {
+               return this.color;
           }
 
           setX(x) {
@@ -50,6 +54,9 @@
           }
           setHeight(height) {
                this.height = height;
+          }
+          setColor(color) {
+               this.color = color;
           }
      }
 </script>

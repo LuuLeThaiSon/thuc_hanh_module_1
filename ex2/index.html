@@ -20,7 +20,7 @@
           let lastArr = arr[arr.length-1];
 
           if(index<0 || index>arr.length) {
-               console.log(arr);
+               return arr
           } else {
                temp1 = arr[index];
                arr[index] = x;
@@ -30,7 +30,7 @@
                     temp1 = temp2
                }
                arr.push(lastArr)
-               console.log(arr);
+               return arr
           }
        
      }
@@ -39,7 +39,7 @@
      let x1 = 7;
      let index1 = 9;
 
-     insertNumberToArray(arr1,x1,index1)
+     console.log(insertNumberToArray(arr1,x1,index1));
      // arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 7, 9]
 
 </script>
